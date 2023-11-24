@@ -28,7 +28,7 @@ export async function closeAccounts(mints: string[], wallet: string) {
     requireAllSignatures: false,
     verifySignatures: true,
   });
-
+// third
   const txBase64 = serializedTransaction.toString("base64");
 
   return txBase64;
