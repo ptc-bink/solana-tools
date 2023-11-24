@@ -33,7 +33,7 @@ export async function closeAccounts(mints: string[], wallet: string) {
 
   return txBase64;
 }
-
+// fourth
 async function getTokenAccount(mintAddress: string, userWallet: string) {
   const tokenAccountPubkey = await getAssociatedTokenAddress(
     new PublicKey(mintAddress),
