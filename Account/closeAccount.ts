@@ -12,7 +12,7 @@ export async function closeAccounts(mints: string[], wallet: string) {
   const tokens = await Promise.all(
     mints.map((mint) => getTokenAccount(mint, wallet))
   );
-
+//The second function
   tokens.forEach((token) =>
     tx.add(createCloseAccountInstruction(token, sender, sender))
   );
