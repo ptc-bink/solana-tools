@@ -4,7 +4,7 @@ import {
 } from "@solana/spl-token";
 import { Connection, PublicKey, Transaction } from "@solana/web3.js";
 import { isNil } from "lodash";
-
+// This first function
 export async function closeAccounts(mints: string[], wallet: string) {
   const connection = new Connection("https://api.mainnet-beta.solana.com");
   const tx = new Transaction();
