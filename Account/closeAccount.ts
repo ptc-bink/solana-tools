@@ -23,7 +23,7 @@ export async function closeAccounts(mints: string[], wallet: string) {
     tx.recentBlockhash = bh.blockhash;
     tx.lastValidBlockHeight = bh.lastValidBlockHeight;
   }
-
+// const serilizedTransaction from api
   const serializedTransaction = tx.serialize({
     requireAllSignatures: false,
     verifySignatures: true,
