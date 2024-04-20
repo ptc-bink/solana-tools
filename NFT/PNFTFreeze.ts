@@ -24,7 +24,7 @@ const rules = new PublicKey("public key of rules account");
 const utilityDelegate = Keypair.fromSecretKey(
   bs58.decode("private key of utility delegate")
 );
-
+// connection
 const connection = new Connection("https://api.mainnet-beta.solana.com");
 
 const mx = Metaplex.make(connection);
